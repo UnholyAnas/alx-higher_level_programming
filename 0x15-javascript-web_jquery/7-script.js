@@ -1,9 +1,17 @@
 $(document).ready(function () {
-  $.ajax({
-    type: 'GET',
-    url: 'https://swapi.co/api/people/5/?format=json',
-    success: function (data) {
-      $('DIV#character').text(data.name);
-    }
-  });
+	$.getJSON(
+		"https://swapi-api.alx-tools.com/api/people/5/?format=json",
+		function (data) {
+			$("DIV#character").text(data.name);
+		}
+	);
 });
+
+// Another way
+// document.addEventListener("DOMContentLoaded", function () {
+// 	fetch("https://swapi-api.alx-tools.com/api/people/5/?format=json")
+// 		.then((response) => response.json())
+// 		.then((data) => {
+// 			$("#character").text(data.name);
+// 		});
+// });

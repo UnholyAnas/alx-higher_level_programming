@@ -1,1 +1,1 @@
-Javascript web scrapping
+# Solutions to tasks on JavaScript - Web scraping

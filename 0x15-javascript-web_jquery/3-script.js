@@ -1,5 +1,5 @@
-$(function () {
-  $('DIV#red_header').click(function () {
-    $('HEADER').addClass('red');
-  });
+$(document).ready(function () {
+	$("DIV#red_header").click(function () {
+		$("header").addClass("red");
+	});
 });
